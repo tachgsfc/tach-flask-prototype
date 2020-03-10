@@ -16,7 +16,7 @@ eralchemy = "*"
 ipython = "*"
 
 [tool.poetry.scripts]
-tach = "tach.cli:app.cli.main"
+tach = "tach:main"
 
 [tool.poetry.plugins."flask.commands"]
 erd = "tach.cli:erd"
