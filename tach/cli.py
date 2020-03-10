@@ -11,3 +11,10 @@ def erd(output):
     """Draw an entity relation diagram for the database."""
     import eralchemy
     eralchemy.render_er(current_app.extensions['sqlalchemy'].db.Model, output)
+
+
+@click.command()
+@with_appcontext
+def createdb():
+    """Initialize database."""
+    current_app.extensions['sqlalchemy'].db.create_all()

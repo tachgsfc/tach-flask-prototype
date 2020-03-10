@@ -19,6 +19,7 @@ ipython = "*"
 tach = "tach:main"
 
 [tool.poetry.plugins."flask.commands"]
+createdb = "tach.cli:createdb"
 erd = "tach.cli:erd"
 
 [build-system]
