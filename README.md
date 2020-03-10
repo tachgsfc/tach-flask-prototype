@@ -27,6 +27,8 @@ The stack consists of the following tools:
 
         $ poetry install
 
+5.  FIXME: add PostgreSQL instructions
+
 ## Start the server
 
 1.  Run the following command to drop into the Python virtual environment:
