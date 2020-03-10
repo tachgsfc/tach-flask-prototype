@@ -18,5 +18,7 @@ class Circular(SAFRSBase, db.Model):
 
 
 class Voevent(SAFRSBase, db.Model):
-    ivorn = sa.Column(su.URLType, primary_key=True)
     content = sa.Column(XMLType, nullable=False)
+    ivorn = sa.Column(su.URLType,
+                      sa.Computed(sa.func.xpath('/*/@ivorn', content)),
+                      primary_key=True)

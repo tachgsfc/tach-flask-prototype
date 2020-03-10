@@ -9,6 +9,7 @@ license = "GPL-3.0-or-later"
 python = "^3.7"
 flask = "*"
 lxml = "*"
+psycopg2-binary = "*"
 safrs = "*"
 sqlalchemy-utils = "*"
 
